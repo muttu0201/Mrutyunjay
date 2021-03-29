@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    input[type='submit'], button, [aria-label] {
+        cursor: pointer;
+    }
+
+    #editForm {
+        display: none;
+    }
+
+    table {
+        font-family: Arial, sans-serif;
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+
+    th {
+        background-color: #f8f8f8;
+        padding: 5px;
+    }
+
+    td {
+        border: 1px solid;
+        padding: 5px;
+    }
+</style>
+<h1>Hotel</h1>
+<h3>Add</h3>
+<form action="javascript:void(0);" method="POST" onsubmit="addHotel()">
+    <input type="text" id="HotelName" placeholder="HotelName">
+    <input type="text" id="HotelType" placeholder="HotelType">
+    <input type="text" id="Comments" placeholder="Comments">
+    <input type="submit" value="Add">
+    @*<input type="button" name="name" value="" onclick="myfuntion" />*@
+</form>
+
+
+<div id="editForm">
+    <h3>Edit</h3>
+    <form action="javascript:void(0);" onsubmit="updateItem()">
+        <input type="hidden" id="editHotelId">
+        <input type="text" id="editHotelName" placeholder="HotelName">
+        <input type="text" id="editHotelType" placeholder="HotelType">
+        <input type="text" id="editComments" placeholder="Comments">
+        <input type="submit" value="Save">
+        <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+    </form>
+</div>
+
+<p id="counter"></p>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Hotel Id</th>
+            <th>Hotel</th>
+            <th>Hotel Type</th>
+            <th>Comments</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="hotellist"></tbody>
+</table>
+
+<script src="js/site.js" asp-append-version="true"></script>
+
+<script type="text/javascript">
+
+    getHotels();
+
+</script>

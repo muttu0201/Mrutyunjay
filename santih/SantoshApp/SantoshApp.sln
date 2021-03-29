@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantoshApp", "SantoshApp.csproj", "{CF8F874F-FED6-4F99-A9D3-79C302F4B18A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap", "..\Bootstrap\Bootstrap.csproj", "{BFA5C5A5-FDFF-4190-84E2-5CB44C16B43D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF8F874F-FED6-4F99-A9D3-79C302F4B18A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8F874F-FED6-4F99-A9D3-79C302F4B18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8F874F-FED6-4F99-A9D3-79C302F4B18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8F874F-FED6-4F99-A9D3-79C302F4B18A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA5C5A5-FDFF-4190-84E2-5CB44C16B43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA5C5A5-FDFF-4190-84E2-5CB44C16B43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA5C5A5-FDFF-4190-84E2-5CB44C16B43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA5C5A5-FDFF-4190-84E2-5CB44C16B43D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F91410F-7F7B-4B9B-806B-50140CF0D395}
+	EndGlobalSection
+EndGlobal
